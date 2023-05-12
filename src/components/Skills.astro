@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Rigoureux et méticuleux </h2>
+		<p>Je m'efforce constamment de produire un code propre et bien structuré, en suivant les meilleures pratiques de développement.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Team Player</h2>
+		<p>J'apprécie de travailler en collaboration avec les autres, en utilisant des méthodes telles que le pair programming, afin d'atteindre nos objectifs communs. Je crois fermement en l'importance du conseil et du partage de connaissances pour améliorer notre travail.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Curiosité sans limites</h2>
+		<p>Je suis passionné par la découverte de nouvelles technologies et je suis constamment en quête de connaissances. J'aime explorer de nouvelles pistes, tester de nouveaux outils et me tenir au courant des dernières tendances du domaine..</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
