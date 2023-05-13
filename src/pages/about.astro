@@ -10,43 +10,43 @@ import Hero from '../components/Hero.astro';
 		<main class="wrapper about">
 			<Hero
 				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				tagline="Découvrez mon parcours et mes compétences"
 			>
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
-					alt="Tony Poomipartes at work with a colleague"
+					src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.5clsKnuWVq0ewKYqumGKqQHaDg%26pid%3DApi&f=1&ipt=8bca2a39bdb1633399a22272c2e8fd385cc7c17a76fe6f1adc1357002aff485f&ipo=images"
+					alt="Tony Poomipartes at work"
 				/>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
+				<h2 class="section-title">Qui suis-je .</h2>
 				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
+          <p>
+            Je suis un développeur web orienté Back-end, anciennement électricien. Curieux de nature, touche-à-tout et surtout passionné par la technologie, j'ai décidé de changer de domaine pour me lancer dans le développement web.<br>
+            Fort de mes 23 années d'expérience dans l'électricité, ainsi que de mes deux années passées en Australie et en Nouvelle-Zélande, je suis prêt à m'envoler vers de nouvelles opportunités professionnelles.<br>
+            Après avoir suivi une formation en développement web, avec une spécialisation en backend, chez O'clock depuis septembre, j'ai hâte de mettre toutes mes compétences au service d'une entreprise à la recherche d'un profil polyvalent.<br>
+            Donc, si vous avez besoin de quelqu'un capable de connecter différentes choses (et pas seulement des fils électriques), n'hésitez pas à me contacter !
+          </p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Education</h2>
+				<h2 class="section-title">Formations</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+          <div class="title-date">
+            <h4>O'Clock</h4> 
+            <p>Septembre 2022 à Mars 2023</p>
+          </div>
+					<p>Formation Développeur Fullstack Javascript <br>
+            (798h de cours) niveau 5 (bac+2)<br>
+          </p>
+          <br>
+          <div class="title-date">
+            <h4>CFA delepine</h4> 
+            <p>Septembre 1998 à Aout 2002</p>
+          </div>
+					<p>BEP/CAP Électrotechnique</p>
 				</div>
 			</section>
 			<section>
@@ -91,6 +91,15 @@ import Hero from '../components/Hero.astro';
 		grid-column: 2 / 4;
 	}
 
+  .title-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  h4{
+    font-size: var(--text-lg);
+  }
 	.content :global(a) {
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
