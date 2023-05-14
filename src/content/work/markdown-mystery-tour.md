@@ -5,6 +5,10 @@ img: /assets/stock-1.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+front: |
+  Côté Front : consommation d'API en front avec le framework React, manipulation du DOM et des événements  
+back:  
+  Côté back  création d'une API pour afficher les recettes en front, création d'une base de données PostgreSQL pour les utilisateurs, la création d'un utilisateur, la sécurité de celui-ci en cryptant ses données ou encore la gestion de session permettant l'affichage d'un profil et sa modification.
 tags:
   - Design
   - Dev

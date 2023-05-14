@@ -32,27 +32,77 @@ import Hero from '../components/Hero.astro';
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Formations</h2>
-				<div class="content">
+        <h2 class="section-title">Formations</h2>
+        <div class="content">
           <div class="title-date">
             <h4>O'Clock</h4> 
             <p>Septembre 2022 à Mars 2023</p>
           </div>
-					<p>Formation Développeur Fullstack Javascript <br>
-            (798h de cours) niveau 5 (bac+2)<br>
-          </p>
-          <br>
-          <div class="title-date">
-            <h4>CFA delepine</h4> 
-            <p>Septembre 1998 à Aout 2002</p>
-          </div>
-					<p>BEP/CAP Électrotechnique</p>
-				</div>
+          <p>Formation Développeur Fullstack JavaScript 
+            <br>
+            (798 heures de cours) niveau 5 (bac+2)</p>
+            <br>
+                        <br>
+            <div class="title-date">
+              <h4>CFA Delepine</h4> 
+              <p>Septembre 1998 à Août 2002</p>
+            </div>
+            <p>BEP/CAP Électrotechnique</p>
+            <br>
+            <!-- <h4>Outils &amp; Technologies</h4> -->
+            
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<hr>
+            <div class="technologies">
+              <div class="technologies-content">
+                <h4>Compétences acquises en formation</h4>
+                <hr>
+                <ul>
+                  <li><p>Railway / Netlify</p></li>
+                  <li><p>Windows</p></li>
+                  <li><p>Bash Linux</p></li>
+                  <li><p>Git (versionnement)</p></li>
+                  <li><p>HTML</p></li>
+                  <li><p>CSS</p></li>
+                  <li><p>JavaScript vanilla</p></li>
+                  <li><p>Node.js</p></li>
+                  <li><p>Express</p></li>
+                  <li><p>Sqitch</p></li>
+                  <li><p>Sequelize</p></li>
+                  <li><p>PostgreSQL</p></li>
+                  <li><p>MongoDB</p></li>
+                  <li><p>GraphQL</p></li>
+                  <li><p>Jest</p></li>
+                  <li><p>Joi</p></li>
+                  <li><p>JSON Web Token</p></li>
+                </ul>
+              </div>
+              <div class="technologies-content">
+                <h4>Compétences en cours d'apprentissage</h4>
+                <hr>
+                <ul>
+                  <li><p>React</p></li>
+                  <li><p>Redux</p></li>
+                  <li><p>Astro</p></li>
+                  <li><p>Sass</p></li>
+                </ul>
+              </div>
+              <div class="technologies-content">
+                <h4>Compétences que j'aimerais acquérir</h4>
+                <hr>
+                <ul>
+                  <li><p>TypeScript</p></li>
+                  <li><p>Solidity</p></li>
+                  <li><p>Ganache</p></li>
+                  <li><p>Truffle</p></li>
+                  <li><p>Hardhat</p></li>
+                  <li><p>Rust</p></li>
+                </ul>
+              </div>
+            </div>
 				</div>
 			</section>
 		</main>
@@ -91,6 +141,17 @@ import Hero from '../components/Hero.astro';
 		grid-column: 2 / 4;
 	}
 
+	.content :global(a) {
+    text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+  
+	.content :global(a:hover),
+	.content :global(a:focus) {
+    text-decoration-color: currentColor;
+	}
+  
   .title-date{
     display: flex;
     justify-content: space-between;
@@ -100,17 +161,12 @@ import Hero from '../components/Hero.astro';
   h4{
     font-size: var(--text-lg);
   }
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
-
+  .technologies{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+  }
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
