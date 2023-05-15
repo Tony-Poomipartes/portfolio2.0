@@ -164,10 +164,11 @@ import Hero from '../components/Hero.astro';
 
   .technologies{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    
     /* align-items: baseline; */
   }
-	@media (min-width: 50em) {
+	@media (min-width: 60em) {
 		.about {
 			display: grid;
 			grid-template-columns: 1fr 60% 1fr;
@@ -181,5 +182,11 @@ import Hero from '../components/Hero.astro';
 			display: contents;
 			font-size: var(--text-lg);
 		}
+
+    .technologies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 	}
 </style>

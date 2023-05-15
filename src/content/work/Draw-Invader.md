@@ -51,7 +51,7 @@ Enfin, la fonction init est appelée pour initialiser le jeu en créant le formu
 
 L'ensemble du jeu est construit en front-end, avec l'utilisation de JavaScript pur pour la manipulation du DOM et la gestion des événements. Le jeu ne nécessite pas de serveur back-end, il peut être hébergé simplement en utilisant le moteur de template EJS pour la création de routes et l'hébergement.
 
-```js
+<!-- ```js
 const app = {
   invader: document.getElementById('invader'),
   defaultGridSize: 16,
@@ -74,7 +74,9 @@ const app = {
     const gridElem = document.createElement('div');
     gridElem.classList.add('grid');
     gridElem.style.width = gridSize * pixelSize + 'px';
-    for(let pixelIndex = 0; pixelIndex < gridSize * gridSize; pixelIndex++){
+    for(let pixelIndex = 0;
+     pixelIndex < gridSize * gridSize;
+      pixelIndex++){
       app.createPixel(pixelSize, gridElem);
     }
     gridElem.addEventListener('click', app.onPixelClick);
@@ -94,8 +96,6 @@ const app = {
 
   //?----------------mise sur ecoute de l'evenement-----
   onPixelClick: function (event){
-    console.log('element qui a déclenché le clic: ' + event.target.className);
-    console.log('element qui posséde le gestionnaire: ' + event.currentTarget.className);
 
     if(event.target.classList.contains('pixel')){
       const pixel = event.target;
@@ -127,8 +127,10 @@ const app = {
 
   onFormSubmit: function (event){
     event.preventDefault();
-    const gridSize = parseInt(event.target.querySelector('input:nth-child(1)').value, 10);
-    const pixelSize = parseInt(event.target.querySelector('input:nth-child(2)').value, 10);
+    const gridSize = parseInt(event.target.querySelector
+    ('input:nth-child(1)').value, 10);
+    const pixelSize = parseInt(event.target.querySelector
+    ('input:nth-child(2)').value, 10);
     if(gridSize && pixelSize){
       app.createGrid(gridSize, pixelSize);
     }
@@ -143,14 +145,16 @@ const app = {
       colorElem.classList.add(style);
       paletteElem.appendChild(colorElem);
     });
-    paletteElem.querySelector(`.${app.selectedColor}`).classList.add('active');
+    paletteElem.querySelector
+    (`.${app.selectedColor}`).classList.add('active');
     paletteElem.addEventListener('click', app.onSwatchClick);
     document.body.appendChild(paletteElem);
   },
 
   onSwatchClick: function (event){
     if(!event.target.classList.contains('palette')){
-      document.querySelector('.palette .active').classList.remove('active');
+      document.querySelector
+      ('.palette .active').classList.remove('active');
       app.selectedColor = event.target.className;
       event.target.classList.add('active');
     }
@@ -165,4 +169,4 @@ const app = {
   }
 };
 app.init();
-```
+``` -->
