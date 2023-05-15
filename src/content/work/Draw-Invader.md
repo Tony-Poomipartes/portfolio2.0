@@ -1,6 +1,6 @@
 ---
 title: Draw Invader
-publishDate: 2020-03-04 00:00:00
+publishDate: 2022-14-11 00:00:00
 img: /assets/project/draw-invader.png
 img_alt: image de la page d'acceuil du site Draw invader
 description: |
@@ -17,7 +17,6 @@ tags:
   - Node.js
   - Express
 ---
-
 #### Introduction
 
 Draw Invader est un fascinant jeu de dessin en pixel qui vous permet de laisser libre cours à votre créativité. Le concept est simple : vous avez la possibilité de créer des motifs en utilisant une grille personnalisable avec une taille définie, ainsi qu'une palette de couleurs pour choisir la teinte de chaque pixel. L'objectif ultime est de concevoir votre propre alien en combinant les pixels de manière artistique.

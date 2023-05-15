@@ -1,6 +1,6 @@
 ---
 title: Squiz Game
-publishDate: 2019-10-02 00:00:00
+publishDate: 2022-14-12 00:00:00
 img: /assets/project/squiz.png
 img_alt: image de la page d'acceuil du site Squiz Game.
 description: |
