@@ -27,6 +27,8 @@ tags:
   - PostgreSQL
   
 ---
+**envie de voir le code?** **c'est [ici](https://github.com/Tony-Poomipartes/odelice_API) !**
+
 #### Introduction
 
 O'délices est une plateforme culinaire incontournable pour tous les gourmets et gourmands en quête de nouvelles inspirations.  
