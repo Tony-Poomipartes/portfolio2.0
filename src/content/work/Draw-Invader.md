@@ -17,9 +17,10 @@ tags:
   - Node.js
   - Express
 ---
+**envie de voir le code?** **c'est [ici](https://github.com/Tony-Poomipartes/Draw-invaders) !**  
+
 #### Introduction
 
-**envie de voir le code?** **c'est [ici](https://github.com/Tony-Poomipartes/Draw-invaders) !**
 Draw Invader est un fascinant jeu de dessin en pixel qui vous permet de laisser libre cours à votre créativité. Le concept est simple : vous avez la possibilité de créer des motifs en utilisant une grille personnalisable avec une taille définie, ainsi qu'une palette de couleurs pour choisir la teinte de chaque pixel. L'objectif ultime est de concevoir votre propre alien en combinant les pixels de manière artistique.
 
 Ce jeu est entièrement développé en front-end, ce qui signifie que toute l'expérience se déroule directement dans le navigateur. Le moteur de template EJS est utilisé pour faciliter la création des routes et l'hébergement du jeu en ligne.
