@@ -35,7 +35,16 @@ import Hero from '../components/Hero.astro';
         <h2 class="section-title">Formations</h2>
         <div class="content">
           <div class="title-date">
-            <h4>(ANSSI) l'agence nationale de la sécurité des systèmes d'information  </h4> 
+            <h4>
+              <img
+              class="icon"
+              width="70"
+              height="50"
+              style="margin-left: -18px; margin-right: -18px;"
+              src="/assets/web icons/anssi.png"
+              alt="icon anssi"
+              />
+              (ANSSI) l'agence nationale de la sécurité des systèmes d'information  </h4> 
             <p>mai 2023 à juin 2023</p>
           </div>
           <p>SecNum académie</p>
@@ -48,7 +57,16 @@ import Hero from '../components/Hero.astro';
           </ul>
           <br>
           <div class="title-date">
-            <h4>O'Clock</h4> 
+            <h4>
+            <img
+            class="icon"
+            width="35"
+            height="35"
+            src="/assets/web icons/oclock.png"
+            alt="icon o'clock"
+            />
+            O'Clock 
+            </h4> 
             <p>Septembre 2022 à Mars 2023</p>
           </div>
           <p>Formation Développeur Fullstack JavaScript 
@@ -147,8 +165,8 @@ import Hero from '../components/Hero.astro';
           </ul>
           <p>Au contact de passionnés et de personnes incroyables lors de ces événements, j'ai énormément appris et grandi dans ma compréhension de la blockchain.</p>
           <img
-					width="1553"
-					height="873"
+					width="768"
+					height="511"
 					src="https://assets-global.website-files.com/632d9fa9f10dfd84922a3c48/64395d7eeb649c8446eacf2b_jpeg-optimizer_FAV4-p-2000.jpg"
 					alt="Paris Blockchain Week 2023"
 				/>
@@ -159,8 +177,8 @@ import Hero from '../components/Hero.astro';
         <p>En tant que végétarien depuis plusieurs années et volontaire pour le ramassage des déchets, je m'efforce d'inculquer ces valeurs à mes enfants avec bienveillance et pédagogie.
         </p>
         <img
-        width="1553"
-        height="873"
+        width="768"
+        height="511"
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.L7tL-YAKEG1DKxhM9q9cwQHaE7%26pid%3DApi&f=1&ipt=875a7aa331abbf11dd3d2125cb9bebfca228e977210223f23378cb128339e412&ipo=images"
         alt="Ramassage des dechets"
         />
@@ -184,6 +202,13 @@ import Hero from '../components/Hero.astro';
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
 	}
+
+  .icon{
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 4px;
+    box-shadow: none;
+  }
 
 	section {
 		display: flex;
