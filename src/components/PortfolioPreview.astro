@@ -8,15 +8,34 @@ interface Props {
 const { data, slug } = Astro.props.project;
 ---
 
-<a class="card" href={`/work/${slug}`}>
+<!-- <a class="card" href={`/work/${slug}`}>
 	<span class="title">{data.title}</span>
 	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
+</a> -->
+
+<a class="card" href={`/work/${slug}`}>
+  <span class="title">{data.title}</span>
+  <img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
+  <div class="pill-container">
+    {data.tags.slice(0, 3).map((t) => <Pill>{t}</Pill>)}
+  </div>
 </a>
-<!-- Technologies used in the project are displayed. -->
-<!-- <div class="tags">
-  {data.tags.map((t) => <Pill>{t}</Pill>)}
-</div> -->
+
+
 <style>
+
+
+.title {
+  grid-area: 1 / 2 / 2 / 3;
+  z-index: 1;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--gray-999);
+  color: var(--gray-200);
+  border-radius: 0.375rem;
+  justify-self: end;
+}
+
 .card {
   display: grid;
   grid-template: auto 1fr / auto 1fr;
@@ -31,22 +50,26 @@ const { data, slug } = Astro.props.project;
   font-size: var(--text-lg);
   font-weight: 500;
   transition: transform 0.4s ease-in-out, box-shadow var(--theme-transition);
+  position: relative;
 }
+
+.pill-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.3rem 1rem;
+  padding-bottom: 0.5rem;
+}
+
 
 .card:hover {
   transform: scale(1.03);
   box-shadow: var(--shadow-lg);
 }
-
-	.title {
-		grid-area: 1 / 1 / 2 / 2;
-		z-index: 1;
-		margin: 0.5rem;
-		padding: 0.5rem 1rem;
-		background: var(--gray-999);
-		color: var(--gray-200);
-		border-radius: 0.375rem;
-	}
 
 	.tags {
 		display: flex;
