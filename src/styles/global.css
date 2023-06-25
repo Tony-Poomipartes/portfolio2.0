@@ -145,7 +145,7 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: 22% -20px;
+  object-position: 22% -0px;
 }
 
 a {
