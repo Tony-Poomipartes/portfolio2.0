@@ -12,7 +12,7 @@ back:
   Côté back :création d'une API pour afficher les recettes en front, création d'une base de données PostgreSQL pour les utilisateurs, la création d'un utilisateur, la sécurité de celui-ci en cryptant ses données ou encore la gestion de session permettant l'affichage d'un profil et sa modification.
 
 tags:
-  - REACT
+  - React
   - Vite
   - Express
   - Axios
