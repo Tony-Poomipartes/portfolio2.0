@@ -12,6 +12,7 @@ back:
 tags:
   - react
   - vite
+  - typescript
   - jest
   - Sass
   - react-dom
