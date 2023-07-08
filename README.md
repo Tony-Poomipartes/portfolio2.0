@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Astro Starter Kit: Portfolio
 
 ```
@@ -29,3 +30,22 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=======
+# Tony 's Portfolio
+
+you can use this portfolio as a template
+It was made with Astro
+
+## init the portfolio
+
+- npm i
+- npm run dev
+
+## note to myself
+
+### my next moves
+
+- put it online with netlify //[https://poomipartes.netlify.app]
+- railway deploy //[portfolio-production-71cb.up.railway.app](https://portfolio-production-71cb.up.railway.app/)
+- add more projects
+>>>>>>> 1de758dc437e6ceee442f05832f622e4f70956ac
