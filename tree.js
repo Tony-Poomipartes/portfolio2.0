@@ -1,6 +1,13 @@
 import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
 
+/**
+ *2 Generates a tree structure of files and directories starting from the given directory path.
+ *
+ * @param {string} directoryPath - The path of the directory to generate the tree structure from.
+ * @param {string} [prefix=''] - The prefix to be used for indentation in the tree structure. Defaults to an empty string.
+ * @return {string} The generated tree structure.
+ */
 function generateTree(directoryPath, prefix = '') {
   // Get the list of files in the directory
   const files = readdirSync(directoryPath);
