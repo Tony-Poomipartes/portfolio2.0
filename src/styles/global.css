@@ -145,7 +145,11 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+<<<<<<< HEAD
+  object-position: 22% -1px;
+=======
   object-position: 22% -0px;
+>>>>>>> 1de758dc437e6ceee442f05832f622e4f70956ac
 }
 
 a {
