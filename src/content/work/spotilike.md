@@ -56,3 +56,5 @@ Ajout de fonctionnalités de playlist : Permettre aux utilisateurs de créer des
 Amélioration de l'interface utilisateur : Affiner les styles et les interactions pour offrir une expérience utilisateur plus conviviale et esthétique.
 
 Intégration de fonctionnalités de recherche : Ajouter une fonctionnalité de recherche pour permettre aux utilisateurs de trouver facilement des chansons et des artistes spécifiques.
+
+Récupération de la couleur principal (npm color-thief) de la pochette pour l'envoyer au background
