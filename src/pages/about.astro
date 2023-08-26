@@ -23,17 +23,22 @@ import Hero from '../components/Hero.astro';
 			<section>
 				<h2 class="section-title">Qui suis-je</h2>
 				<div class="content">
-          <p>
-            Je suis un développeur web orienté Back-end, anciennement électricien. Curieux de nature, touche-à-tout et surtout passionné par la technologie, j'ai décidé de changer de domaine pour me lancer dans le développement web.<br>
-            Fort de mes 23 années d'expérience dans l'électricité, ainsi que de mes deux années passées en Australie et en Nouvelle-Zélande, je suis prêt à m'envoler vers de nouvelles opportunités professionnelles.<br>
-            Après avoir suivi une formation en développement web, avec une spécialisation en backend, chez O'clock depuis septembre, j'ai hâte de mettre toutes mes compétences au service d'une entreprise à la recherche d'un profil polyvalent.<br>
-            Donc, si vous avez besoin de quelqu'un capable de connecter différentes choses (et pas seulement des fils électriques), n'hésitez pas à me contacter !
-          </p>
+          <details>
+            <summary> voir plus </summary>
+            <p>
+              Je suis un développeur web orienté Back-end, anciennement électricien. Curieux de nature, touche-à-tout et surtout passionné par la technologie, j'ai décidé de changer de domaine pour me lancer dans le développement web.<br>
+              Fort de mes 23 années d'expérience dans l'électricité, ainsi que de mes deux années passées en Australie et en Nouvelle-Zélande, je suis prêt à m'envoler vers de nouvelles opportunités professionnelles.<br>
+              Après avoir suivi une formation en développement web, avec une spécialisation en backend, chez O'clock depuis septembre, j'ai hâte de mettre toutes mes compétences au service d'une entreprise à la recherche d'un profil polyvalent.<br>
+              Donc, si vous avez besoin de quelqu'un capable de connecter différentes choses (et pas seulement des fils électriques), n'hésitez pas à me contacter !
+            </p>
+        </details>
 				</div>
 			</section>
 			<section>
         <h2 class="section-title">Formations</h2>
         <div class="content">
+          <details>
+            <summary> voir plus </summary>
           <div class="title-date">
             <h4>
               <img
@@ -108,11 +113,14 @@ import Hero from '../components/Hero.astro';
             <p>BEP/CAP Électrotechnique</p>
             <br>
             <!-- <h4>Outils &amp; Technologies</h4> -->
+          </details>
         </div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
+          <details>
+            <summary> voir plus </summary>
 					<hr>
             <div class="technologies">
               <div class="technologies-content">
@@ -163,12 +171,14 @@ import Hero from '../components/Hero.astro';
                 </ul>
               </div>
             </div>
+            </details>
 				</div>
 			</section>
       <section>
         <h2 class="section-title">Centre d'interet</h2>
         <div class="content">
-          
+          <details>
+            <summary > voir plus </summary>
           <h4>BlockChain</h4> 
           <p>Cette technologie prodigieuse, ouvre un monde de possibilités infinies !</p>
           <p>Je consacre de nombreuses heures à la veille technologique pour comprendre son écosystème, être à jour sur les dernières actualités, explorer son fonctionnement et découvrir ses nombreux cas d'utilisation.</p>
@@ -196,10 +206,24 @@ import Hero from '../components/Hero.astro';
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.L7tL-YAKEG1DKxhM9q9cwQHaE7%26pid%3DApi&f=1&ipt=875a7aa331abbf11dd3d2125cb9bebfca228e977210223f23378cb128339e412&ipo=images"
         alt="Ramassage des dechets"
         />
+      </details>
         </div>
 			</section>
 		</main>
-
+    <script>
+      const summaryElements = document.querySelectorAll('summary');
+  
+      summaryElements.forEach(summaryElement => {
+        summaryElement.addEventListener('click', () => {
+          const isOpen = summaryElement.parentElement.open;
+          if (isOpen) {
+            summaryElement.textContent = 'Voir plus';
+          } else {
+            summaryElement.textContent = 'Voir moins';
+          }
+        });
+      });
+    </script>
 		<ContactCTA />
 	</div>
 </BaseLayout>
@@ -222,6 +246,19 @@ import Hero from '../components/Hero.astro';
     margin-top: 0;
     margin-bottom: 4px;
     box-shadow: none;
+  }
+
+  summary {
+    cursor: pointer;
+
+    display: inline-flex;
+		padding: 0.5rem 1rem;
+    margin-top: -1em;
+    margin-bottom: 1em;
+    color: var(--accent-text-over);
+		border: 3px solid var(--accent-dark);
+		background-color: var(--accent-regular);
+		border-radius: 999rem;
   }
 
 	section {
