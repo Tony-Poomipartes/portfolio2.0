@@ -4,7 +4,7 @@ publishDate: 2022-14-12 00:00:00
 img: /assets/project/encrypt.png
 img_alt: image de la page d'acceuil du site Encrypt.
 description: |
-  Encrypt est site pour crypté ses mot de passe.
+  Encrypt est site pour chiffrer ses mots de passes.
 front: |
     plusieurs fonctions disponible :
 back:  
